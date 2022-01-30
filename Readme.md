@@ -32,7 +32,7 @@ Na estrutura também existe a pasta feature que esta o BDD
 O relatório simplificado dos passos do teste está na pasta target\reports\
 Vale ressaltar que devido ao erro encontrado, o Assert para o step foi comprometido, pois o texto não foi localizado para validar.
 
-<img src="Report.jpg">
+<img src="Report.jpg" width=100%>
 
 Não foi possível concluir 100% dos cenários, foi detectado uma falha na página, conforme tópico "Bug".
 
@@ -45,7 +45,7 @@ Não foi possível concluir 100% dos cenários, foi detectado uma falha na pági
 <br /><br /></div>
 <img src="Country.jpg">
 <br /><br />
-<img src="Bug.jpg">
+<img src="Bug.jpg" width=100%>
 <br /><br />
 <div style="text-align:justify"> Ponto de melhoria:</div>
 <div style="text-align:justify">
