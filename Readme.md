@@ -45,7 +45,7 @@ Não foi possível concluir 100% dos cenários, foi detectado uma falha na pági
 <br /><br /></div>
 <img src="Country.jpg">
 <br /><br />
-<img src="Bug.png">
+<img src="Bug.jpg">
 <br /><br />
 <div style="text-align:justify"> Ponto de melhoria:</div>
 <div style="text-align:justify">
