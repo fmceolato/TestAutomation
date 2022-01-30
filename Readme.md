@@ -2,14 +2,14 @@
 
 Esse projeto faz parte de uma avaliação para BRAVI.
 
-    Foi realizado no site http://demo.automationtesting.in/Register.html. Na qual, a automação visa registrar um usuário.
+Foi realizado no site http://demo.automationtesting.in/Register.html. Na qual, a automação visa registrar um usuário.
 
-    Escrito usando o Framework Selenium Webdrive com Linguagem Java e para o gerenciamento das dependencias o Maven.
+Escrito usando o Framework Selenium Webdrive com Linguagem Java e para o gerenciamento das dependencias o Maven.
 
 <hr size="25" width="100%" align="center" noshade>
 
-<h3><a href="textresumo">Resume</a></h3>
-<h3><a href="textbug">Bug</a></h3>
+<h3>Resume</h3>
+<h3>Bug</h3>
 
 <h1> Site da Automação</h1>
 
@@ -17,7 +17,7 @@ Esse projeto faz parte de uma avaliação para BRAVI.
 
 <hr size="25" width="100%" align="center" noshade>
 
-<h4>Resume<a name="textresumo"></a></h4>
+<h4>Resume</h4>
 
 <div style="text-align:justify"> A estrutura da automação esta baseada em Page Objets. Sendo em 4 pastas:
     Pages, Run, Steps e Support
@@ -39,7 +39,7 @@ Não foi possível concluir 100% dos cenários, foi detectado uma falha na pági
 </div>
 <hr size="25" width="100%" align="center" noshade>
 
-<h4>Bug<a name="textbug"></a></h4>
+<h4>Bug</h4>
 
 <div style="text-align:justify"> Foi detectado uma falha no campo "Country*". Esse campo não tem a lista para preenchimento. Deveria aparecer lista ao clicar.
 <br /><br /></div>
