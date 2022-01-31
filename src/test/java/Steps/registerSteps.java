@@ -25,7 +25,7 @@ public class registerSteps extends runner {
             HomePage.fillEmail();
             HomePage.fillPhone("0119547852");
             HomePage.fillGender(2);
-            HomePage.fillHobbie("Cricket", "","");
+            HomePage.fillHobbie();
             HomePage.fillLinguage();
             HomePage.fillSkills();
             HomePage.fillSelCountry();

@@ -72,14 +72,13 @@ public class homePage extends utils {
         Assert.assertEquals("FeMale", checkBox.getText());
     }
 
-    public void fillHobbie (String Cricket, String Movies, String Hockey) {
-        if (Cricket == "Cricket"){
-            driver.findElement(hobcricket).click();
-        }else if (Movies == "Movies"){
-            driver.findElement(hobmovies).click();
-        }else if (Hockey == "Hockey"){
-            driver.findElement(hobhockey).click();
-        }
+    public void fillHobbie () {
+
+
+        driver.findElement(hobmovies).click();
+        driver.findElement(hobhockey).click();
+
+
     }
 
     public void fillLinguage () {
@@ -119,14 +118,25 @@ public class homePage extends utils {
 
 
     public void checkRegister () {
+
+        //Assert Hobies
+        WebElement checkHobMovies = driver.findElement(By.id("checkbox2"));
+        WebElement checkHobHockey = driver.findElement(By.id("checkbox3"));
+
+        Assert.assertTrue(checkHobMovies.isSelected());
+        Assert.assertTrue(checkHobHockey.isSelected());
+
+        //Assert Linguage
         String nameLinguage = driver.findElement(By.xpath("//*[@id=\"msdd\"]/div")).getText();
         Assert.assertEquals("IDIOMA ERRADO", "Portuguese",nameLinguage);
 
+        //Assert Skill
         String textSkill = driver.findElement(fillSkill).getText();
         Assert.assertEquals("SKILL ERRADO", "Java", textSkill);
 
+        //Assert Country
         String textCountry = driver.findElement(fillcountry).getText();
-        Assert.assertEquals("O TESTE FALHOU","Brazil", textCountry);
+        Assert.assertEquals("PAÍS INVÁLIDO","Brazil", textCountry);
 
 
     }
