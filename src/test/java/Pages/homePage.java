@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import Support.utils;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 public class homePage extends utils {
@@ -67,6 +68,8 @@ public class homePage extends utils {
         }else if (type == 2){
             driver.findElement(female).click();
         }
+        WebElement checkBox = driver.findElement(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[5]/div/label[2]"));
+        Assert.assertEquals("FeMale", checkBox.getText());
     }
 
     public void fillHobbie (String Cricket, String Movies, String Hockey) {
