@@ -112,15 +112,17 @@ public class homePage extends utils {
 
     public void checkRegisters () {
         //Assert Gender
-        WebElement checkBox = driver.findElement(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[5]/div/label[2]"));
-        Assert.assertEquals("FeMale", checkBox.getText());
+        WebElement checkBox = driver.findElement(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[5]/div/label[2]/input"));
+        WebElement checkBox2 = driver.findElement(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[5]/div/label[1]/input"));
+        Assert.assertTrue(checkBox.isSelected());
+        Assert.assertFalse(checkBox2.isSelected());
 
         //Assert Hobies
         WebElement checkHobMovies = driver.findElement(By.id("checkbox2"));
         WebElement checkHobHockey = driver.findElement(By.id("checkbox3"));
 
-        Assert.assertTrue(checkHobMovies.isSelected());
-        Assert.assertTrue(checkHobHockey.isSelected());
+        Assert.assertTrue("Movies não selecionado", checkHobMovies.isSelected());
+        Assert.assertTrue("Hockey não selecionado",checkHobHockey.isSelected());
 
         //Assert Linguage
         String nameLinguage = driver.findElement(By.xpath("//*[@id=\"msdd\"]/div")).getText();
