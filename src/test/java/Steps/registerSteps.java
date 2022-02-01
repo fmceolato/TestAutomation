@@ -42,7 +42,7 @@ public class registerSteps extends runner {
 
     @Então("^vejo cadastro realizado com sucesso$")
         public void vejo_cadastro_realizado_com_sucesso()  {
-            HomePage.checkRegister();
+            HomePage.checkRegisters();
 
     }
 

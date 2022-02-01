@@ -68,24 +68,17 @@ public class homePage extends utils {
         }else if (type == 2){
             driver.findElement(female).click();
         }
-        WebElement checkBox = driver.findElement(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[5]/div/label[2]"));
-        Assert.assertEquals("FeMale", checkBox.getText());
+
     }
 
     public void fillHobbie () {
-
-
         driver.findElement(hobmovies).click();
         driver.findElement(hobhockey).click();
-
-
     }
 
     public void fillLinguage () {
-
         driver.findElement(fieldlinguage).click();
         driver.findElement(filllinguage).click();
-
     }
 
     public void fillSkills () {
@@ -117,7 +110,10 @@ public class homePage extends utils {
     }
 
 
-    public void checkRegister () {
+    public void checkRegisters () {
+        //Assert Gender
+        WebElement checkBox = driver.findElement(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[5]/div/label[2]"));
+        Assert.assertEquals("FeMale", checkBox.getText());
 
         //Assert Hobies
         WebElement checkHobMovies = driver.findElement(By.id("checkbox2"));
@@ -137,9 +133,5 @@ public class homePage extends utils {
         //Assert Country
         String textCountry = driver.findElement(fillcountry).getText();
         Assert.assertEquals("PAÍS INVÁLIDO","Brazil", textCountry);
-
-
     }
-
-
 }
